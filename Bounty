@@ -3,7 +3,7 @@ _G["HoHo Hub Auto Bounty V3"] = {
     ["Avatar"] = "https://i.ibb.co/DL019xs/d5b46cd41ff4610dd5f6f0a64ff66dfa.png",
 
   	["Farm Method"] = "Normal", -- Normal or Gun
-    ["Select Team"] = "Marine", -- Pirate/Marine
+    ["Select Team"] = "Pirate", -- Pirate/Marine
     ["Discord Webhook"] = "",
 	["Bypass Teleport"] = true,
 	["Max Level Distance"] = 612, -- 612 is took from wiki but u can change it
