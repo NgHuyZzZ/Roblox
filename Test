@@ -7,7 +7,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local menu1 = Instance.new("Frame")
 local menuname = Instance.new("TextLabel")
-local INY = Instance.new("TextButton")
+local Revive = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
 local openmenu = Instance.new("Frame")
@@ -36,17 +36,17 @@ menuname.Text = "Menu OP"
 menuname.TextColor3 = Color3.fromRGB(0, 0, 0)
 menuname.TextSize = 35.000
 
-INY.Name = "INY"
-INY.Parent = menu1
-INY.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
-INY.Position = UDim2.new(0.0642201826, 0, 0.300751865, 0)
-INY.Size = UDim2.new(0, 144, 0, 50)
-INY.Font = Enum.Font.SourceSans
-INY.Text = "Infiniyield"
-INY.TextColor3 = Color3.fromRGB(0, 0, 0)
-INY.TextSize = 14.000
-INY.MouseButton1Down:Connect(function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')))()    
+Revive.Name = "Revive"
+Revive.Parent = menu1
+Revive.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+Revive.Position = UDim2.new(0.0642201826, 0, 0.300751865, 0)
+Revive.Size = UDim2.new(0, 144, 0, 50)
+Revive.Font = Enum.Font.SourceSans
+Revive.Text = "Revive"
+Revive.TextColor3 = Color3.fromRGB(0, 0, 0)
+Revive.TextSize = 14.000
+Revive.MouseButton1Down:Connect(function()
+        game.ReplicatedStorage.Bricks.Revive:FireServer()
 end)
 
 esp.Name = "esp"
