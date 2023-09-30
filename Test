@@ -1,4 +1,4 @@
--- NgHuyZzZ#9999
+-- NgHuyZzZ#0000
 -- Gui to Lua
 -- Version: 3.2
 
@@ -8,7 +8,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local menu1 = Instance.new("Frame")
 local menuname = Instance.new("TextLabel")
 local Revive = Instance.new("TextButton")
-local esp = Instance.new("TextButton")
+local Doors = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
 local openmenu = Instance.new("Frame")
 local openmenubutton = Instance.new("TextButton")
@@ -49,16 +49,16 @@ Revive.MouseButton1Down:Connect(function()
         game.ReplicatedStorage.Bricks.Revive:FireServer()
 end)
 
-esp.Name = "Doors"
-esp.Parent = Doors
-esp.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
-esp.Position = UDim2.new(0.582568824, 0, 0.300751865, 0)
-esp.Size = UDim2.new(0, 144, 0, 50)
-esp.Font = Enum.Font.SourceSans
-esp.Text = "Doors"
-esp.TextColor3 = Color3.fromRGB(0, 0, 0)
-esp.TextSize = 14.000
-esp.MouseButton1Down:Connect(function()
+Doors.Name = "Doors"
+Doors.Parent = menu1
+Doors.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+Doors.Position = UDim2.new(0.582568824, 0, 0.300751865, 0)
+Doors.Size = UDim2.new(0, 144, 0, 50)
+Doors.Font = Enum.Font.SourceSans
+Doors.Text = "Doors"
+Doors.TextColor3 = Color3.fromRGB(0, 0, 0)
+Doors.TextSize = 14.000
+Doors.MouseButton1Down:Connect(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))() 
 end)
 
