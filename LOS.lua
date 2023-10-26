@@ -4,7 +4,7 @@ if game.PlaceId == 3101667897 then
     
     -- Notificação
     OrionLib:MakeNotification({
-	Name = "The Legends HUB ⚡",
+	Name = "Orion Library",
 	Content = "The Legends HUB ⚡ Legends Of Speed",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -182,7 +182,7 @@ if game.PlaceId == 3101667897 then
     -- Toggles
     FarmTab:AddToggle({
 	    Name = "Auto Orb",
-	    Default = false,
+	    Default = true,
 	    Callback = function(Value)
 		    getgenv().AutoOrb = Value
 		    AutoOrb()
@@ -191,7 +191,7 @@ if game.PlaceId == 3101667897 then
     
     FarmTab:AddToggle({
 	    Name = "Auto Hoop",
-	    Default = false,
+	    Default = true,
 	    Callback = function(Value)
 		    getgenv().AutoHoop = Value
 		    spawn(function()
@@ -208,7 +208,7 @@ if game.PlaceId == 3101667897 then
 
     FarmTab:AddToggle({
 	    Name = "Auto Gem",
-	    Default = false,
+	    Default = true,
 	    Callback = function(Value)
 		    getgenv().AutoGem = Value
 		    AutoGem()
@@ -217,7 +217,7 @@ if game.PlaceId == 3101667897 then
 
     MiscTab:AddToggle({
 	    Name = "Auto Rebirth",
-	    Default = false,
+	    Default = true,
 	    Callback = function(Value)
 		    getgenv().AutoRebirth = Value
 		    AutoRebirth()
