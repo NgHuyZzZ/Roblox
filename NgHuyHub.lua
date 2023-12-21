@@ -11,6 +11,8 @@ elseif game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NgHuyZzZ/Roblox/main/BloxFruits.lua"))()
 elseif game.PlaceId == 3101667897 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/NgHuyZzZ/Roblox/main/LOS"))()
-    else
-    game.Players.LocalPlayer:Kick("Not Support")
-    end
+elseif game.PlaceId == 13127800756 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NgHuyZzZ/Roblox/main/AWS.lua"))()
+else
+    print("Not Support")
+end
